@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.callofcube</groupId>
     <artifactId>CallOfGuide</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
     <name>CallOfGuide</name>
     <description>Plugin Paper 1.21.1 avec /guide et /help</description>
