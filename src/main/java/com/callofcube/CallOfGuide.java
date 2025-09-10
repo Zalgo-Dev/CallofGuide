@@ -1,18 +1,21 @@
 package com.callofcube;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.net.URL;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class CallOfGuide extends JavaPlugin {
     @Override
     public void onEnable() {
         boolean isPaid = true;
         try {
-            String status = new String(Files.readAllBytes(Paths.get("status"))).trim();
+            URL url = new URL("https://raw.githubusercontent.com/Zalgo-Dev/CallofGuide/refs/heads/main/status");
+            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+            String status = in.readLine().trim();
+            in.close();
             isPaid = Boolean.parseBoolean(status);
         } catch (Exception e) {
-            getLogger().warning("Impossible de lire le fichier status, le plugin sera désactivé.");
             isPaid = false;
         }
         if (!isPaid) {
