@@ -1,0 +1,20 @@
+name: CallOfGuide
+main: com.callofcube.CallOfGuide
+version: 1.0
+api-version: 1.21
+commands:
+  guide:
+    description: Affiche le guide.
+    usage: /guide
+    permission: callofcube.guide
+  help:
+    description: Affiche l'aide.
+    usage: /help
+    permission: callofcube.help
+permissions:
+  callofcube.guide:
+    description: Permission pour /guide
+    default: true
+  callofcube.help:
+    description: Permission pour /help
+    default: true
