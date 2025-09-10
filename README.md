@@ -14,4 +14,4 @@ Plugin Paper 1.21.1 pour Minecraft
 2. Placez le fichier JAR généré dans le dossier `plugins` de votre serveur Paper 1.21.1.
 
 ## Personnalisation
-Modifiez les messages dans `GuideCommand.java` et `HelpCommand.java` selon vos besoins.
+Modifiez les messages dans le fichier `config.yml` pour personnaliser les réponses des commandes `/guide` et `/help` (multi-lignes supportées).
